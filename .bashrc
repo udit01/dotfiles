@@ -115,6 +115,14 @@ fi
 
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
 #export http_proxy=http://proxy22.iitd.ac.in:3128
 #export https_proxy=https://proxy22.iitd.ac.in:3128
 
