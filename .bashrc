@@ -16,8 +16,11 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=5000
-HISTFILESIZE=10000
+HISTSIZE=10000
+HISTCONTROL="erasedups:ignoredups:ignorespace"
+HISTIGNORE="history*:ls*:cd"
+
+#HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -129,3 +132,5 @@ fi
 # added by Anaconda3 installer
 export PATH="$HOME/anaconda3/bin:$PATH"
 export CHEATCOLORS=true
+
+#export HISTTIMEFORMAT="%h %d %H:%M:%S> "
