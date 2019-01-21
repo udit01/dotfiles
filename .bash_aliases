@@ -46,6 +46,9 @@ alias ckbat='bash /home/marpangal/checkBattery.sh'
 # custom applications
 #######################################################################
 
+# Basic calculator
+
+alias bc='bc -l'
 
 # Git
 
@@ -89,7 +92,7 @@ alias octave='octave --no-gui'
 alias ARM='cd /home/marpangal/Dropbox/sem2/COL216/dotnet;mono ARMSim.exe'
 alias Android='/home/marpangal/android-studio/bin/studio.sh'
 alias ocaml='rlwrap ocaml'
-
+alias la='LANG="en_US.UTF-8";LANGUAGE="en_US.UTF-8"'
 
 # finding something
 alias numFile='find . -type f | wc -l'
