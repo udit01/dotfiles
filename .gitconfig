@@ -3,3 +3,5 @@
 [user]
 	email = uditjainiitd@gmail.com
 	name = udit01
+#[http]
+# 	proxy = http://proxy22.iitd.ac.in:3128
