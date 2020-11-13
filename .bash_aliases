@@ -60,12 +60,12 @@ alias gc='git commit'
 alias gcm='git commit -m'
 
 alias gp='git push'
-alias gpom='git push origin master'
-alias gphm='git push heroku master'
+alias gpom='git push origin main'
+alias gphm='git push heroku main'
 
 alias gcl='git clone'
 alias gpl='git pull'
-alias gplom='git pull origin master'
+alias gplom='git pull origin main'
 
 alias gck='git checkout'
 alias gs='git status'
